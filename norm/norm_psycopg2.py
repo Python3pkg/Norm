@@ -1,14 +1,14 @@
-from __future__ import unicode_literals
+
 
 from psycopg2.extensions import AsIs
 
-from norm import SELECT
-from norm import INSERT
-from norm import UPDATE
-from norm import DELETE
-from connection import ConnectionFactory
-from connection import ConnectionProxy
-from connection import CursorProxy
+from .norm import SELECT
+from .norm import INSERT
+from .norm import UPDATE
+from .norm import DELETE
+from .connection import ConnectionFactory
+from .connection import ConnectionProxy
+from .connection import CursorProxy
 
 
 class PG_INSERT(INSERT):

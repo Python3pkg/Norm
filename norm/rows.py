@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+
 
 from itertools import groupby
 
@@ -26,4 +26,4 @@ class RowsProxy(object):
             if column_names is None or hasattr(row, 'get'):
                 yield row
             else:
-                yield dict(zip(column_names, row))
+                yield dict(list(zip(column_names, row)))
